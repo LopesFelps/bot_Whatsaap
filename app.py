@@ -16,7 +16,7 @@ for linha in pagina_msg.iter_rows(min_row=2):
     nome = linha[0].value
     numero = linha[1].value
     
-    mensagem = f'Olá {nome} seu lixo. Favor me responder corretamente!'
+    mensagem = f'Olá {nome}. Favor me responder corretamente!'
     
     try:
         link_msg_zap = f'https://web.whatsapp.com/send?phone={numero}&text={quote(mensagem)}'
